@@ -15,9 +15,9 @@ void loop() {
   Serial.println(sensorValue);
 
   if (sensorValue > threshold) {
-    digitalWrite(buzzerPin, HIGH);  // Smoke detected
+    tone(buzzerPin, 2000);   // 2 kHz alarm tone
   } else {
-    digitalWrite(buzzerPin, LOW);
+    noTone(buzzerPin);
   }
 
   delay(200);
