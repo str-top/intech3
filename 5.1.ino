@@ -1,5 +1,5 @@
 const int mq2Pin = A0;
-const int buzzerPin = 8;
+const int buzzerPin = 6;
 
 int threshold = 400;   // Adjust after calibration
 
